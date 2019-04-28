@@ -1,28 +1,38 @@
 # Raspberry-Ros
 
 Install Ubuntu Mate 16.04
+
 -Just use Elcher for that
 
 Enable ssh
+
 -Use: sudo raspi-config
+
 -Enter: Interfacing Options
+
 -Then: Enable SSH
+
 -In the remote computer: ssh-keygen -R <host>
 
 Set the operating system:
 
 -sudo apt-get purge scratch minecraft-pi libreoffice-* firefox brasero sonic-pi sense-emu-tools atril hexchat pidgin thunderbird youtube-dl simple-scan shotwell
+
 -sudo apt-get autoremove
 
 Install ROS Kinetic
+
 -Go to System -> Administration -> Software & Updates
+
 -Check the checkboxes to repositories to allow “restricted,” “universe,” and “multiverse.” 
+
 -Follow normal installation steps
+
 -Install just bear bones
 
 Prepare the internet connection
--Edit interfaces:
-# /etc/network/interfaces
+
+-Edit interfaces: # /etc/network/interfaces
 
 auto lo
 
@@ -36,8 +46,7 @@ iface wlan0 inet dhcp
 wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 iface default inet dhcp
 
--Edit wpa_supplicant.conf
-# /etc/wpa_supplicant/wpa_supplicant.conf
+-Edit wpa_supplicant.conf # /etc/wpa_supplicant/wpa_supplicant.conf
 
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
