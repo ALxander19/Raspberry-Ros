@@ -9,7 +9,8 @@ Enable ssh
 -Then: Enable SSH
 -In the remote computer: ssh-keygen -R <host>
 
-Set the operating system
+Set the operating system:
+
 -sudo apt-get purge scratch minecraft-pi libreoffice-* firefox brasero sonic-pi sense-emu-tools atril hexchat pidgin thunderbird youtube-dl simple-scan shotwell
 -sudo apt-get autoremove
 
