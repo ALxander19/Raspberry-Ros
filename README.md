@@ -2,33 +2,33 @@
 
 # Install Ubuntu Mate 16.04
 
--Just use Elcher for that
+Just use Elcher for that
 
 # Enable ssh
 
--Use: sudo raspi-config
+Use: sudo raspi-config
 
--Enter: Interfacing Options
+Enter: Interfacing Options
 
--Then: Enable SSH
+Then: Enable SSH
 
--In the remote computer: ssh-keygen -R <host>
+In the remote computer: ssh-keygen -R <host>
 
 # Set the operating system:
 
--sudo apt-get purge scratch minecraft-pi libreoffice-* firefox brasero sonic-pi sense-emu-tools atril hexchat pidgin thunderbird youtube-dl simple-scan shotwell
+sudo apt-get purge scratch minecraft-pi libreoffice-* firefox brasero sonic-pi sense-emu-tools atril hexchat pidgin thunderbird youtube-dl youtube-dlg simple-scan shotwell
 
--sudo apt-get autoremove
+sudo apt-get autoremove
 
 # Install ROS Kinetic
 
--Go to System -> Administration -> Software & Updates
+Go to System -> Administration -> Software & Updates
 
--Check the checkboxes to repositories to allow “restricted,” “universe,” and “multiverse.” 
+Check the checkboxes to repositories to allow “restricted,” “universe,” and “multiverse.” 
 
--Follow normal installation steps
+Follow normal installation steps
 
--Install just bear bones
+Install just bear bones
 
 # Prepare the internet connection
 
@@ -68,29 +68,29 @@ key_mgmt=WPA-PSK
 
 # Install Arduino
 
--Download the arm architecture and the version you prefer (1.8.1 best for teensy)
+Download the arm architecture and the version you prefer (1.8.1 best for teensy)
 
--For install put it in Documents and never erased.
+For install put it in Documents and never erased.
 
--User ./install.sh (Errors appear)
+User ./install.sh (Errors appear)
 
--Use ./arduino (Errors will be solved)
+Use ./arduino (Errors will be solved)
 
--Them sudo usermod -a -G dialout $USER
+Them sudo usermod -a -G dialout $USER
 
--Allow ACM0 to work: sudo chmod 666 /dev/ttyACM0
+Allow ACM0 to work: sudo chmod 666 /dev/ttyACM0
 
 # Copy data over the network to MAC
 
--scp /home/alex/file Alexander@192.168.8.100:/Users/Alexander/Documents/
+scp /home/alex/file Alexander@192.168.8.100:/Users/Alexander/Documents/
 
 # Turn off the computer
 
--sudo shutdown -r now
+sudo shutdown -r now
 
 # Initialize with ROS_MASTER_URI and ROS_IP for the network
 
--add to .bashrc the following lines:
+add to .bashrc the following lines:
 
 actual_ip=$(ip route get 8.8.8.8 | awk '{print $NF; exit}')
 
