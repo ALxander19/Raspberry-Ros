@@ -26,9 +26,9 @@ Go to System -> Administration -> Software & Updates
 
 Check the checkboxes to repositories to allow “restricted,” “universe,” and “multiverse.” 
 
-Follow normal installation steps
+Follow normal installation steps from this link, install ROS-Base (Bare Bones)
 
-Install just bear bones
+http://wiki.ros.org/kinetic/Installation/Ubuntu
 
 # Prepare the internet connection
 
